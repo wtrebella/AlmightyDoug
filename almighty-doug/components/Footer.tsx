@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer
-      className="mt-auto flex-1 ml-4 mb-1 p-1 text-left text-sm text-gray-500"
+      className="shrink-0 ml-4 mb-1 p-1 text-left text-sm text-gray-500"
     >
       <div className="mt-1">
           <span className="inline-flex text-tiny">
