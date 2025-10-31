@@ -8,10 +8,21 @@
 @theme inline {
     --color-background: var(--background);
     --color-foreground: var(--foreground);
-    --font-sans: var(--font-geist-sans);
-    --font-mono: var(--font-geist-mono);
-    --font-bungee: var(--font-bungee-hairline);
+    --font-geist-sans: var(--font-geist-sans);
+    --font-geist-mono: var(--font-geist-mono);
+    --font-bungee: var(--font-bungee);
     --text-tiny: 0.75rem;
+    --link-style: "text-[#444477] hover:text-[#666699]";
+}
+
+@layer base {
+    a {
+        @apply text-[#444477] hover:text-[#666699]
+    }
+
+    a.no-default {
+        @apply text-inherit hover:text-inherit
+    }
 }
 
 @media (prefers-color-scheme: dark) {

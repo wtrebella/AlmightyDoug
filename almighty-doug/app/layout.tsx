@@ -14,12 +14,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const bungeeHairline = Bungee_Hairline({
-    weight: '400',
-    variable: "--font-bungee",
-    subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
   title: "Almighty Doug",
   description: "A shrine to Almighty Doug",
@@ -36,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
         <body
-            className={`${bungeeHairline.variable} ${geistSans.variable} ${geistMono.variable} antialiased flex flex-col h-screen`}
+            className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col h-screen overflow-hidden`}
         >
             <main className="flex-100">
                 {children}
