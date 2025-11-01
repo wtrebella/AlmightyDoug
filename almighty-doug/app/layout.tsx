@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
         <body
-            className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col h-screen overflow-hidden`}
+            className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col h-screen overflow-hidden app-scroll`}
         >
             <main className="flex-1 min-h-0 overflow-hidden">
                 {children}
