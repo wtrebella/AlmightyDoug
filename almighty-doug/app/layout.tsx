@@ -1,5 +1,5 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono, Bungee_Hairline } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
 import Footer from "@/components/Footer";
 import "./globals.css";
 import React from "react";
@@ -21,6 +21,13 @@ export const metadata: Metadata = {
       icon: "/icon.png",
     }
 };
+
+export const viewport: Viewport = {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false
+}
 
 export default function RootLayout({
   children,
