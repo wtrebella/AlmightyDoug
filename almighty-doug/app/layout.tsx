@@ -37,14 +37,12 @@ export default function RootLayout({
   return (
     <html lang="en">
         <body
-            className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col h-screen overflow-hidden`}
+            className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col h-screen overflow-hidden touch-action-none`}
         >
-            <div className="app-scroll">
-                <main className="flex-1 min-h-0 overflow-hidden">
-                    {children}
-                </main>
+            <main className="app-scroll flex-1 min-h-0">
+                {children}
                 <Footer />
-            </div>
+            </main>
         </body>
 
     </html>

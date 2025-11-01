@@ -250,7 +250,7 @@ export default function Home() {
     }, []);
 
     return (
-        <div className={"w-full h-[100dvh] bg-[#141414] touch-action-none overflow-hidden"}>
+        <div className={"w-full h-[100dvh] bg-[#141414]"}>
             <div ref={containerRef} className="w-full h-full" />
             <div className="absolute top-5 left-1/2 -translate-x-1/2 text-white text-center z-10  px-10 py-5 rounded-lg">
             </div>
