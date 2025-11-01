@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Footer from "@/components/Footer";
 import "./globals.css";
-import React from "react";
+import React, {Fragment} from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,12 +37,14 @@ export default function RootLayout({
   return (
     <html lang="en">
         <body
-            className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col h-screen overflow-hidden app-scroll`}
+            className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col h-screen overflow-hidden`}
         >
-            <main className="flex-1 min-h-0 overflow-hidden">
-                {children}
-            </main>
-            <Footer />
+            <div className="app-scroll">
+                <main className="flex-1 min-h-0 overflow-hidden">
+                    {children}
+                </main>
+                <Footer />
+            </div>
         </body>
 
     </html>
